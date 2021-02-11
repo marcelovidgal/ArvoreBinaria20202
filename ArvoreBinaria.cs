@@ -223,7 +223,7 @@ namespace ArvoreBinaria
 				}
 
 				Console.WriteLine("removendo um no com dois filhos...");
-				noTemp = this.GetSucessor(no.noEsquerdo);
+				noTemp = this.GetPredecessor(no.noEsquerdo);
 				no.info = noTemp.info;
 				no.noEsquerdo = this.Remover(noTemp.info, no.noEsquerdo);
 			}
@@ -231,10 +231,10 @@ namespace ArvoreBinaria
 			return no;
 		}
 
-		public No GetSucessor(No no)
+		public No GetPredecessor(No no)
 		{
 			if (no.noDireito != null)
-				return this.GetSucessor(no.noDireito);
+				return this.GetPredecessor(no.noDireito);
 
 			return no;
 		}
