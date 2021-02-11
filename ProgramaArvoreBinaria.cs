@@ -58,10 +58,13 @@ namespace ArvoreBinaria
 
 			arvoreBinaria = new ArvoreBinaria();
 			arvoreBinaria.Inserir('C');
-			arvoreBinaria.Inserir('D');
 			arvoreBinaria.Inserir('A');
 			arvoreBinaria.Inserir('B');
+			arvoreBinaria.Inserir('D');
+			//arvoreBinaria.Inserir('E');
+			arvoreBinaria.Inserir('F');
 			arvoreBinaria.Inserir('E');
+			arvoreBinaria.Inserir('G');
 			arvoreBinaria.Exibir();
 
 			Console.WriteLine(arvoreBinaria.GetValorMinimo());
@@ -69,7 +72,12 @@ namespace ArvoreBinaria
 			arvoreBinaria.PercorrerEmOrdem();
 
 			//arvoreBinaria.Remover('A');
-			arvoreBinaria.Remover('C');
+			//arvoreBinaria.Remover('B');
+			//arvoreBinaria.Remover('C');
+			//arvoreBinaria.Remover('D');
+			arvoreBinaria.Remover('F');
+			
+			arvoreBinaria.Exibir();
 
 			arvoreBinaria.PercorrerEmOrdem();
 
