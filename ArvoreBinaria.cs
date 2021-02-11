@@ -230,7 +230,7 @@ namespace ArvoreBinaria
 
 			return no;
 		}
-
+		
 		public No GetPredecessor(No no)
 		{
 			if (no.noDireito != null)
